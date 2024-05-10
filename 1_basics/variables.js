@@ -5,14 +5,16 @@
 const accId = 123;
 let accCity = "pune";
 var accEmail = "mk@gmail.com";
-accState ;
+let accState;
+// It will retrun Undefined as a output
+
 
 console.log(accId);
 
- accId= 456;
+
  accCity= "nagpur";
  accEmail= "va@gmail.com";
 
- console.table([accCity,accEmail,accId, accState])
+ console.table([accCity,accEmail,accId,accState])
  
 
