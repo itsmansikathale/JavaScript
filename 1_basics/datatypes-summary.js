@@ -45,3 +45,35 @@ const myFunction = function(){
 
 // To check Which datatype its of use 
 console.log(typeof myFunction) ;
+
+
+// ----------------------------//------------------------------
+
+// Memory Allocation
+// There are two types of memory 
+// 1) Stack Memory : In all Primitive types we use stack .
+// It  gives copy of the variable that we have declared in memory.
+
+let myName = "mansi"
+let anothername = myName
+
+anothername = "manu"
+
+console.log(myName);
+console.log(anothername);
+
+
+// 2) Heap Memory  : In all Non -primitive types we use heap .
+// It gives direct reference of the original value that we have
+//created  in memory.
+
+
+let mansi = {
+   id :1,
+    email: "mansi@gmail.com",
+}
+
+let manu = mansi
+manu.id = 2
+
+// Here if we want to update the value we use  . (dot)
