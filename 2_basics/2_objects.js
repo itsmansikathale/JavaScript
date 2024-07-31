@@ -12,15 +12,15 @@
 
 // how to add symbol into keys 
 // we use [] to work as a symbol
-const sym = Symbol("hi")
-const user = {
-    name: "mansi",
-    "full name": "Mansi Kathale",
-    [sym]: "hi",
-    "email": "mansi@gmail.com",
-    isLoggedIn: false,
-    lastLoginDays: ["Monday", "Tuesday"]
-}
+// const sym = Symbol("hi")
+// const user = {
+//     name: "mansi",
+//     "full name": "Mansi Kathale",
+//     [sym]: "hi",
+//     "email": "mansi@gmail.com",
+//     isLoggedIn: false,
+//     lastLoginDays: ["Monday", "Tuesday"]
+// }
 
 // ways to declare objects
 
@@ -30,7 +30,7 @@ const user = {
 // console.log(user["full name"])
 // console.log(user[sym]);
 
-user.email = "mansikathale@gmail.com"
+// user.email = "mansikathale@gmail.com"
 
 // to lock particular info
 // Object.freeze(user)
@@ -38,13 +38,13 @@ user.email = "mansikathale@gmail.com"
 // console.log(user);
 
 // funtions adding in objects
-user.greeting = function () {
-    console.log("hello User");
-}
-user.greetingTwo = function () {
+// user.greeting = function () {
+//     console.log("hello User");
+// }
+// user.greetingTwo = function () {
     // `` this is string interpulation
     // console.log(`hello User, ${this.name}`);
-}
+// }
 
 // console.log(user.greeting());
 // console.log(user.greetingTwo());
@@ -56,87 +56,99 @@ user.greetingTwo = function () {
 // const user = new Object ()
 
 // it is a non singleton object
-const hiUser = {}
+// const hiUser = {}
 
-user.id = "123"
-user.name = "abc"
-user.isLoggedIn = false
+// user.id = "123"
+// user.name = "abc"
+// user.isLoggedIn = false
 
-// console.log(user);
+// // console.log(user);
 
 
-//  Objects under Objects
-const user1 = {
-    email: "abc@gmail.com",
-    fullname: {
-        userfullname: {
-            firstname: "mansi",
-            lastname: "kathale"
-        }
+// //  Objects under Objects
+// const user1 = {
+//     email: "abc@gmail.com",
+//     fullname: {
+//         userfullname: {
+//             firstname: "mansi",
+//             lastname: "kathale"
+//         }
 
-    }
-}
+//     }
+// }
 
 // console.log(user1.fullname.userfullname);
 
 
-const obj1 ={1:"a" , 2:"b"}
-const obj2 ={3:"a" , 4:"b"}
-const obj4 ={5:"a" , 6:"b"}
+// const obj1 ={1:"a" , 2:"b"}
+// const obj2 ={3:"a" , 4:"b"}
+// const obj4 ={5:"a" , 6:"b"}
 
-// combining two objects
+// // combining two objects
 
-// const obj3 =Object.assign({}, obj1, obj2, obj4)
-// creating an empty object so that the value of all objects
-//  are not stored in the first object i.e obj1
+// // const obj3 =Object.assign({}, obj1, obj2, obj4)
+// // creating an empty object so that the value of all objects
+// //  are not stored in the first object i.e obj1
 
-const obj3 ={...obj1, ...obj2}
-// * 90% time we make use this syntax where we are using 
-// spread Operator
-// console.log(obj3);
+// const obj3 ={...obj1, ...obj2}
+// // * 90% time we make use this syntax where we are using 
+// // spread Operator
+// // console.log(obj3);
 
 
-// - when values come from databases
+// // - when values come from databases
 
-const users = [
-    {
-        id: 1, 
-        email: "a@gmail.com"
-    },
-    {
-        id: 1, 
-        email: "a@gmail.com"
-    },
+// const users = [
+//     {
+//         id: 1, 
+//         email: "a@gmail.com"
+//     },
+//     {
+//         id: 1, 
+//         email: "a@gmail.com"
+//     },
     
-    {
-        id: 1, 
-        email: "a@gmail.com"
-    },
+//     {
+//         id: 1, 
+//         email: "a@gmail.com"
+//     },
     
-    {
-        id: 1, 
-        email: "a@gmail.com"
-    },
+//     {
+//         id: 1, 
+//         email: "a@gmail.com"
+//     },
     
-    {
-        id: 1, 
-        email: "a@gmail.com"
-    },
-    
-    {
-        id: 1, 
-        email: "a@gmail.com"
-    },
-]   
- users[1].email
- console.log(hiUser);
 
- console.log(Object.keys(hiUser));
- console.log(Object.values(hiUser));
- console.log(Object.entries(hiUser));
+//  users[1].email
+//  console.log(hiUser);
+
+//  console.log(Object.keys(hiUser));
+//  console.log(Object.values(hiUser));
+//  console.log(Object.entries(hiUser));
 //  it results array inside array
 
 
 // to check if the object has this property or not
 // when value crashed
-console.log(hiUser.hasOwnProperty('isLoggedIn'));
+// console.log(hiUser.hasOwnProperty('isLoggedIn'));
+
+
+
+
+
+// ------------------ De - structure Objects -----------------//
+
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
