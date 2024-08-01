@@ -64,4 +64,49 @@ function loginUserMsg(username ="sam" ) {
 // console.log(loginUserMsg("mansi"))
 
 // if we dont pass any value then its o/p is undefined
-console.log(loginUserMsg())
+// console.log(loginUserMsg())
+
+
+
+
+
+
+
+ //-----------------------------------------------//  
+// ... is a rest operator
+ function calculateCartPrice ( val1, val2,...num1) {
+    return num1
+ }
+
+//  console.log(calculateCartPrice(200,900,790,5000,1000))
+
+
+//  how to use the object and call them in function
+const user = {
+    username:"mansi",
+    price: 200
+}
+
+function handleObject (anyObject){
+    console.log(`Username is ${anyObject.username} and price is 
+        ${anyObject.price} `)
+    }
+
+    // handleObject (user)
+
+    // directly passing the objects using functions
+    handleObject ({
+        username :"harry",
+        price: 399
+    })
+
+    // Passing array using functions
+    const myArray = [100,200,300,400,500]
+    function returnSecondValue(getArray){
+        return getArray[1]
+    }
+
+    // console.log(returnSecondValue(myArray));
+
+// we can directly add array in functions
+    console.log(returnSecondValue([200,320,860]));
