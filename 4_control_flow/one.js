@@ -118,12 +118,27 @@
 
 const userLoggedIn = true
 const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
 
 if(userLoggedIn && debitCard & 2==2){
     console.log("Allow all students to buy the course")
 }
 
+
 //  && this is AND symbol .
 //  which is used for checking multiple conditions.
 //  if any of the condition is false .
 // then it will not execute the code.
+
+//  here we are checking that isuserLogged in from google
+// or email.
+// here we are making use of OR ||.
+// It is used for testing multiple conditions.
+// Here also we can check for multiple ci=onditions , 
+//  and if anyone of them is true , then the log 
+//  stamt will execute
+if(loggedInFromGoogle || loggedInFromEmail) {
+console.log("User Logged In");
+
+}
