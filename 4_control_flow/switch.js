@@ -10,7 +10,10 @@
 
 
 
-const month = 11
+// const month = 11
+const month = "dec"
+// as we have aded the string in the dec month
+// 
 
 switch (month) {
     case 1:
@@ -57,7 +60,7 @@ switch (month) {
         console.log("November");
         
         break;
-    case 12:
+    case "dec":
         console.log("December");
         
         break;
@@ -67,5 +70,13 @@ switch (month) {
         
         break;
 }
+
+// In this if any condition does not work then the , 
+// default stmt will definitely work.
+
+// Note :
+// ek baar jaha pe bhi ye case match ho jata hain uske baad 
+// ka pura ka pura code run karvata hain.
+// accept default
 
 // After
