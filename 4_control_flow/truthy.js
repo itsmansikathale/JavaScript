@@ -27,6 +27,10 @@ if (userEmail) {
 //Other than that all the other values are truthy true value
 
 
+
+
+
+
 // truthy values
 //"0"(inside string if it has 0 then is considered as true).
 
@@ -72,4 +76,63 @@ if (Object.keys(emptyObj).length === 0) {
 // 0 == ''
 // is also true
 
+
+
+
+
+
+
+
+// Nullish Coalescing Operator (??): null undefined
+// It is mostly associated with only null and undefined
+
+let val1;
+val1 = 5 ?? 10
+// here we get o/p as 5 .
+// we r making use of them because we will make use of 
+// database that we will gonna create on mongodb or 
+// appwrite or somewhere else.
+
+//  So for that we cannt directly get the response 
+// we have to pass two values for that,
+
+//  So because of that there is a chance that it will
+//  return null , undefined or didnt respond .
+
+//In that case ur whole code structure can get into trouble.
+
+//For those cases this operator is created or in use.
+
+
+// val1 = null ?? 10 
+// returns 10 here in this case.
+// agar null value aata hai to vo safety check karta hai
+// kyunki null ke basis pe maybe program to hai vo run
+// na kare.
+
+
+// val1 = undefined ?? 15 
+//  it will return 15
+
+val1 = undefined ?? 20 ?? 30
+// it will return 20 
+//  as this is the first value after undefined
+console.log(val1);
+
+
+
+
+
+
+
+
+//  Ternary Operator 
+// Syntax : 
+// condition ? true : false
+
+// Example
+iceTeaPrice = 100
+
+iceTeaPrice <=80 ? console.log("less tahn 80") : 
+console.log("more than 80")
 
