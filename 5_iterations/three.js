@@ -52,4 +52,31 @@ map.set('Fr', "France")
 // map.set('Fr', "France")
 // Duplicatation is not allowed .
 
-console.log(map);
+// console.log(map);
+
+
+// for of loop using map method ;
+
+
+// here we are passing key and value in the below example.
+for (const  [key, value] of map) {
+    console.log(key, ':-' , value);
+}
+
+
+
+// for of loop in map using object 
+
+const myObject = {
+    'game1': 'NFS'
+ 
+
+}
+
+for (const [key, value] of myObject) {
+    // console.log(key, ':-', value);
+}
+
+
+// output is ;
+// myObject is not iterable
